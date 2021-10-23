@@ -3,16 +3,24 @@
     padding: 0;
     margin: 0;
 }
-
-body {
-    background-color: #d9dcd6;
+/** added color index **/
+:root {
+    --white: #ffffff;
+    --off-white: #d9dcd6;
+    --dark-teal: #2a607c;
+    --light-blue: #2589bd;
+    --blue: #0072bb;
 }
 
+body {
+    background-color: var(--off-white);
+}
+/* added/adjusted semantic element to "header" */ 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: var(--dark-teal);
+    color: var(--white);
 }
 
 header h1 {
@@ -21,7 +29,7 @@ header h1 {
 }
 
 header h1 .seo {
-    color: #d9dcd6;
+    color: var(--off-white);
 }
 
 header nav {
@@ -42,7 +50,7 @@ header nav ul li {
 }
 
 a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -50,7 +58,7 @@ p {
     font-size: 16px;
 }
 
-.hero {
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -74,14 +82,15 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
+/* added/adjusted semantic element to "article",
+removed duplicate styling format for each article, h2, and image */ 
 article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 article img {
@@ -92,7 +101,8 @@ article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* added/adjusted semantic element to "aside",
+removed duplicate styling format for each aside, h2, and image */ 
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -101,12 +111,12 @@ article h2 {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: var(--light-blue);
 }
 
 aside {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 aside h3 {
@@ -119,7 +129,7 @@ aside img {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* added/adjusted semantic element to "footer" */ 
 footer {
     padding: 30px;
     clear: both;
