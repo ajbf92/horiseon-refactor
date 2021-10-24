@@ -93,13 +93,13 @@ article {
     color: var(--white);
 }
 
-article img {
-    max-height: 200px;
-}
-
 article h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+article img {
+    max-height: 200px;
 }
 /* added/adjusted semantic element to "aside",
 removed duplicate styling format for each aside, h2, and image */ 
